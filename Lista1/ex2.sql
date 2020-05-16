@@ -1,11 +1,5 @@
 ----------------------------------EX2.1
 ----------------------------------CRIAR UM BD E POPULAR
---create database hollywood;
---\c hollywood
-
-DROP TABLE Characters;
-DROP TABLE Movies;
-DROP TABLE Actors;
 
 CREATE TABLE IF NOT EXISTS Movies(
     movie_id SERIAL,
