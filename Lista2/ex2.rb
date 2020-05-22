@@ -10,6 +10,8 @@ class BankAccount
         @password = password
     end 
 
+    attr_reader :name,:cpf,:phone_number,:age,:balance,:account_number,:password
+
     #Método para depositar dinheiro em uma conta bancária
     def DepositMoney(value)
         @balance += value
@@ -52,7 +54,6 @@ end
 
 #Inicialização
 myaccount = BankAccount.new("flip","99706-2643","057.851.512-84",21,0,12578,"minhasenhaehboa")
-
 
 loop do
     puts "------------------------------"

@@ -10,6 +10,8 @@
             @password = password
         end 
 
+        attr_reader :name,:cpf,:phone_number,:age,:balance,:account_number,:password
+
         #Método para depositar dinheiro em uma conta bancária
         def DepositMoney(value)
             @balance += value
