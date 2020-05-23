@@ -8,6 +8,8 @@ class Aluno
 end
 
 class Turma
+
+    #A inicialização de uma turma cria de 5 a 20 alunos aleatórios
     def initialize()
         @alunos = []
         @n_alunos = rand(5..20)
@@ -17,6 +19,7 @@ class Turma
     end
     attr_reader :alunos, :n_alunos
 
+    #Retorna o número de alunos aprovados em uma turma
     def Aprovados
         n_aprovados = 0
         for i in 0..alunos.size-1
@@ -36,11 +39,13 @@ class Materia
 
     attr_reader :nome, :n_turmas, :turmas
 
+    #Cria uma turma nova na matéria
     def Adicionar_Turma
         @n_turmas += 1
         @turmas.push(Turma.new)
     end
     
+    #Retorna o número total de aprovados em uma matéria
     def N_Aprovados
         n_aprovados = 0
         for i in 0..@turmas.size-1
@@ -49,6 +54,7 @@ class Materia
         n_aprovados
     end
 
+    #Retorna o número total de alunos em uma matéria
     def N_Alunos
         n_alunos = 0
         for i in 0..@turmas.size-1
@@ -60,7 +66,6 @@ end
 
 nomes_materias = ["Cálculo 1", "Cálculo 2", "Cálculo 3", "Física 1", "Física 2", 
     "Estruturas de Dados" ,"Algoritmos e Programação de Computadores","Técnicas de Programação 1","Sistemas Digitais","Eletromagnetismo"]
-
     n_turmas = 0
 loop do
     puts "Insira o número de turmas"
@@ -73,6 +78,7 @@ end
 materias = Hash.new
 #Criando Hash de materias
 for i in 0..n_turmas-1
+    #Matéria selecionada randomicamente
     materia_rand_nome = nomes_materias[rand(0..nomes_materias.size-1)]
     
     #Matéria já tem ao menos uma turma
@@ -95,9 +101,9 @@ materias.each do |key, materia|
     puts "Número de turmas: #{materia.n_turmas}"
     puts "Número de alunos: #{materia.N_Alunos}"
     puts "Número de aprovados: #{materia.N_Aprovados}"
-    puts "Porcentagem de aprovados: #{(materia.N_Aprovados.to_f/materia.N_Alunos.to_f).round(3)}%"
+    puts "Porcentagem de aprovados: #{(100*materia.N_Aprovados.to_f/materia.N_Alunos.to_f).round(3)}%"
     puts "-------------------"
     print "\n"
 end
 
-puts "Total de Alunos aprovados em todas as materias: #{(n_aprovados.to_f/n_alunos.to_f).round(3)}%"
+puts "Total de Alunos aprovados em todas as materias: #{(100*n_aprovados.to_f/n_alunos.to_f).round(3)}%"

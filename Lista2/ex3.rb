@@ -66,6 +66,7 @@ class CurrentAccount < Person
         puts "Senha:#{@password}"  
     end
 
+    #Método para listar as instancias de contas correntes
     def self.ListCurrentAccounts()
         if @@lista.size == 0
             puts "Não há contas corrente disponíveis"
@@ -124,6 +125,7 @@ class SavingsAccount < Person
         puts "Senha:#{@password}"  
     end
 
+    #Método para listar as instancias de contas poupança
     def self.ListSavingsAccounts()
         if @@lista.size == 0
             puts "Não há poupanças disponíveis"
@@ -136,6 +138,7 @@ class SavingsAccount < Person
     end
 end
 
+#Método para dar display do menu das operações com a conta bancária
 def AccountsMenu(myaccount)
     loop do
         puts "------------------------------"
@@ -241,9 +244,11 @@ loop do
         print "Insira o id da conta que deseja acessar:"
         conta_id = gets.to_i
 
+        #Conta desejada é uma conta corrente
         if conta_id <= CurrentAccount.lista.size()
             myaccount = CurrentAccount.lista[conta_id-1]
             AccountsMenu(myaccount)
+        #Conta desejada é uma conta poupança
         elsif conta_id <= SavingsAccount.lista.size() + CurrentAccount.lista.size()
             myaccount = SavingsAccount.lista[conta_id-CurrentAccount.lista.size()-1]
             AccountsMenu(myaccount)
