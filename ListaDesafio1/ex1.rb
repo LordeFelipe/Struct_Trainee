@@ -6,12 +6,14 @@ def fatorial(num)
     end
 end
 
-number = -1
-while(number <= 0)
-    puts "Insira um número positivo maior que zero"
-    number = gets.to_i
-end
 
+puts "Insira um número positivo maior que zero"
+number = gets.to_i
+
+if number <= 0
+    puts "Entrada inválida"
+    exit
+end
 if number < 10
     print "#{number}! = "
     for i in 1..number-1

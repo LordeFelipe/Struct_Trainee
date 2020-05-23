@@ -1,7 +1,9 @@
-number = -1
-while(number <= 0)
-    puts "Insira um número positivo maior que zero"
-    number = gets.to_i
+puts "Insira um número positivo maior que zero"
+number = gets.to_i
+
+if number <= 0
+    puts "Entrada inválida"
+    exit
 end
 
 primos = Array.new
@@ -14,5 +16,5 @@ end
 if(primos.size == 0)
     puts "O número #{number} é primo :D"
 else
-    puts "O número #{number} não é primo pois tem divisores #{primos}"
+    puts "O número #{number} não é primo pois tem #{primos.size} divisores: #{primos}"
 end
