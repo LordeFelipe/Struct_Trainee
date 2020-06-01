@@ -10,8 +10,8 @@ MusicStyle.create(name: "Rock")
 MusicStyle.create(name: "Pop")
 MusicStyle.create(name: "Sertanejo")
 MusicStyle.create(name: "Funk")
-
-Album.create(name: "Evolve", artist: "Imagine Dragons")
-
-Music.create(name: "Thunder", explicit: false, album: Album.find_by_name("Evolve"), music_style: MusicStyle.find_by_name("Pop"))
-Music.create(name: "Believer", explicit: false, album: Album.find_by_name("Evolve"), music_style: MusicStyle.find_by_name("Pop"))
+MusicStyle.create(name: "MPB")
+MusicStyle.create(name: "Jazz")
+MusicStyle.create(name: "Rap")
+MusicStyle.create(name: "Pagode")
+MusicStyle.create(name: "Metal")

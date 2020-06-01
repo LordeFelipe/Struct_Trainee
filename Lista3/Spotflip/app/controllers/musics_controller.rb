@@ -7,8 +7,10 @@ class MusicsController < ApplicationController
     music = Music.new(musics_params)
     begin
       music.save!
+      flash[:notice] = "Música criada com sucesso!"
     rescue => exc
       puts exc
+      flash[:notice] = exc
     ensure
       redirect_to musics_path
     end
@@ -30,8 +32,10 @@ class MusicsController < ApplicationController
     music = Music.find(params[:id])
     begin
       music.destroy!
+      flash[:notice] = "Música excluída com sucesso!"
     rescue => exc
       puts exc
+      flash[:notice] = exc
     ensure
       redirect_to musics_path
     end
@@ -41,8 +45,10 @@ class MusicsController < ApplicationController
     music = Music.find(params[:id])
     begin
       music.update!(musics_params)
+      flash[:notice] = "Música editada com sucesso!"
     rescue => exc
       puts exc
+      flash[:notice] = exc
     ensure
       redirect_to musics_path
     end

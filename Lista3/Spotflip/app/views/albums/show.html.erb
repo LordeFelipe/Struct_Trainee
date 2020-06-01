@@ -15,5 +15,35 @@
   <%= @album.created_at %>
 </p>
 
+<h1>Músicas</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th>Album</th>
+    <th>Gênero</th>
+    <th>Explícita</th>
+    <th colspan="4"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @album.music.each do |music| %>
+    <tr>
+      <td><%= music.name %></td>
+      <td><%= music.album.name %></td>
+      <td><%= music.music_style.name %></td>
+      <td><%= music.explicit %></td>
+
+      <td><%= link_to 'Detalhes', music_path(music) %></td>
+      <td><%= link_to 'Editar', edit_music_path(music) %></td>
+      <td><%= link_to 'Deletar', music_path(music), method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Adicionar Música', new_music_path %> |
 <%= link_to 'Editar', edit_album_path(@album) %> |
 <%= link_to 'Voltar', albums_path %>
