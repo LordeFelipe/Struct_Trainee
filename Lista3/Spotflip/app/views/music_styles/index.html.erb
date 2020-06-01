@@ -1,0 +1,22 @@
+<h1>Estilos Musicais</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th colspan="1"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @music_styles.each do |music_style| %>
+    <tr>
+      <td><%= music_style.name %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Home', root_path %>
+
+<br>

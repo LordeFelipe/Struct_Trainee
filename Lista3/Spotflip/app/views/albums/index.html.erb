@@ -1,0 +1,28 @@
+<h1>Albuns salvos</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th>Artista</th>
+    <th colspan="2"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @albums.each do |album| %>
+    <tr>
+      <td><%= album.name %></td>
+      <td><%= album.artist %></td>
+      <td><%= link_to 'Detalhes', album_path(album) %></td>
+      <td><%= link_to 'Editar', edit_album_path(album) %></td>
+      <td><%= link_to 'Deletar', album_path(album), method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Novo Album', new_album_path %>
+<%= link_to 'Home', root_path %>
+
+<br>

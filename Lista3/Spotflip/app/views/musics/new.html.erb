@@ -1,0 +1,32 @@
+<h1>Nova Música</h1>
+
+<%= form_with model: @music do |form| %>
+  <div class="field">
+    <%= form.label :name, 'Nome' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :album_id, 'Album' %>
+    <%= form.collection_select(:album_id, Album.all, :id, :name) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :music_style_id, 'Estilo musical' %>
+    <%= form.collection_select(:music_style_id, MusicStyle.all, :id, :name) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name, 'Explícita?' %>
+    <%= form.label :explicit, "Sim", :explicit => "true"  %>
+    <%= form.radio_button :explicit, true %>
+    <%= form.label :explicit, "Não", :explicit => "false" %>
+    <%= form.radio_button :explicit, false %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Criar música" %>
+  </div>
+<% end %>
+
+<%= link_to 'Voltar', musics_path %>
