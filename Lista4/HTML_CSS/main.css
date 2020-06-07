@@ -1,0 +1,21 @@
+ul{
+    list-style: none;
+    color: purple;
+}
+
+body p{
+    color: red;
+}
+
+body h1{
+    color: green;
+    background-color: magenta;
+}
+
+.palavraroxa{
+    color: purple;
+}
+
+.paddinglista{
+    padding-top: 150px;
+}

@@ -1,0 +1,47 @@
+body {
+    background: url("cavalo.jpg") no-repeat;
+    height: 100vh;
+    background-size: 100%;
+    background-position: 0 bottom; 
+}
+
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.subtitle{
+    color: grey;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.nav-item{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.borders {
+    border-left:3px solid white;    
+    border-right:3px solid white;  
+}
+
+.information_top{
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.information_bottom{
+    font-size: 15px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    font-weight: bolder;
+    padding: 8px 0 0 0 ;
+    margin: 0;
+}
