@@ -1,0 +1,19 @@
+<h1>Editar Album</h1>
+
+<%= form_with model: @album do |form| %>
+  <div class="field">
+    <%= form.label :name, 'Nome' %>
+    <%= form.text_field :name, value: @album.name  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :artist, 'Artista' %>
+    <%= form.text_field :email, value: @album.artist %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Atualizar album" %>
+  </div>
+<% end %>
+
+<%= link_to 'Voltar', albums_path %>

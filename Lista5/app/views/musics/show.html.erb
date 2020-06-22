@@ -1,0 +1,29 @@
+<h1>Detalhes da música</h1>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @music.name %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @music.album.name %>
+</p>
+
+<p>
+  <strong>Estilo Musical:</strong>
+  <%= @music.music_style.name %>
+</p>
+
+<p>
+  <strong>Explicita:</strong>
+  <%= @music.explicit %>
+</p>
+
+<p>
+  <strong>Adicionado em:</strong>
+  <%= @music.created_at %>
+</p>
+
+<%= link_to 'Editar', edit_music_path(@music) %> |
+<%= link_to 'Voltar', musics_path %>
