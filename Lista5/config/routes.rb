@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :musics
   resources :music_styles, only: [:index]
 
-  resources :calendar, only: [:index]
+  resources :calendars
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -1,4 +1,3 @@
-
 function buttonsListener() {
     //Getting all buttons in the page
     let buttons = document.getElementsByTagName('button');

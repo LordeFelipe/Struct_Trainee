@@ -1,35 +1,34 @@
 async function eventCalendar() {
-    let data = await getFeriadosNacionais();
+    let data = await getFeriadosJapao();
     console.log(data);
-    return $('#event_calendar').fullCalendar({
+    return $('#calendar').fullCalendar({
         events: convertDataToEvents(data)
     });
 };
 
 function clearCalendar() {
-    $('#event_calendar').fullCalendar('delete'); // In case delete doesn't work.
-    $('#event_calendar').html('');
+    $('#calendar').fullCalendar('delete');
+    $('#calendar').html('');
 };
 
 function convertDataToEvents(data_json) {
     let events = [];
-    for (let i = 0; i < data_json.length; i++) {
-        let [dia, mes ,ano] = data_json[i].date.split("/");
-        let start = ano + "-" + mes + "-" + dia;
+    //Getting the holidays in JSON
+    let data_holidays = data_json["response"]["holidays"];
+    for (let i = 0; i < data_holidays.length; i++) {
         events.push({
             id: i,
-            title: data_json[i].name,
-            start: start,
-            url: data_json[i].link,
+            title: data_holidays[i].name,
+            start: data_holidays[i]["date"]["iso"]
         })
     }
     return events
 }
 
-function getFeriadosNacionais() {
+function getFeriadosJapao() {
     return $.ajax(
         {
-            url: "https://api.calendario.com.br/?json=true&ano=2020&ibge=3550308&token=cGVkcm9fYXVndXN0b0BzdHJ1Y3QudW5iLmJyJmhhc2g9MTYxMjkwMjk1",
+            url: "https://calendarific.com/api/v2/holidays?api_key=000cf2d6fb9c97fab702bed2f6269ed1ca499cb3&country=jp&year=2020",
             success: function (result) {
                 console.log("Deu bom")
             },
