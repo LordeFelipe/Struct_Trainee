@@ -1,6 +1,5 @@
 async function eventCalendar() {
     let data = await getFeriadosJapao();
-    console.log(data);
     return $('#calendar').fullCalendar({
         events: convertDataToEvents(data)
     });

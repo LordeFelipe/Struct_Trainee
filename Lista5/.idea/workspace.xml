@@ -20,30 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3125fc08-09b6-40ea-91b0-c6110ce509a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/calendars/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/charts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/calendar.coffee" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/calendar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/calendar_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/calendar_helper.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/application/homepage.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/application/homepage.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/calendar/index.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/calendar_controller_test.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/DP/DPl5cRdxFKR5qDTwZHxdyF05P26Jrjs-NTVNUdLEV80.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/DP/DPl5cRdxFKR5qDTwZHxdyF05P26Jrjs-NTVNUdLEV80.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Kf/KfG5MnSj9MVNp0BELBld2CIalWKb9jzfZAgla9MChS4.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/Kf/KfG5MnSj9MVNp0BELBld2CIalWKb9jzfZAgla9MChS4.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YW/YWoIanYweI4Bza2NmpdC8-SDzxgAzqVtoHI7RqpKnfk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/YW/YWoIanYweI4Bza2NmpdC8-SDzxgAzqVtoHI7RqpKnfk.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/fL/fLU-JxbR-2zvuzpyYkfDZcd0552WO65HDL8nvLu4nNk.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/fL/fLU-JxbR-2zvuzpyYkfDZcd0552WO65HDL8nvLu4nNk.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/yu/yuBgJuKGKLxv6ai96ihAPv2LHbVSV6BOF1lC6CrM-wc.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/yu/yuBgJuKGKLxv6ai96ihAPv2LHbVSV6BOF1lC6CrM-wc.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/zN/zN0DcSwRF-W99GmE10TVKzEqiJ7dhhj6RPKxzekVO68.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/zN/zN0DcSwRF-W99GmE10TVKzEqiJ7dhhj6RPKxzekVO68.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/1e/ffc058942c4faf" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/1e/ffc058942c4faf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/85/a0017c5bb76ca7" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/85/a0017c5bb76ca7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b5/5b10e80d4e474a" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b5/5b10e80d4e474a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
     </list>
@@ -188,7 +177,7 @@
       <workItem from="1592782027568" duration="11719000" />
       <workItem from="1592836084516" duration="11916000" />
       <workItem from="1592871915650" duration="901000" />
-      <workItem from="1592872841570" duration="4214000" />
+      <workItem from="1592872841570" duration="7728000" />
     </task>
     <servers />
   </component>
@@ -208,6 +197,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592878301884">
+      <screen x="0" y="24" width="1366" height="744" />
+    </state>
+    <state x="421" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1366.744@0.24.1366.744" timestamp="1592878301884" />
     <state x="471" y="141" key="FileChooserDialogImpl" timestamp="1592871668562">
       <screen x="0" y="24" width="1366" height="744" />
     </state>
